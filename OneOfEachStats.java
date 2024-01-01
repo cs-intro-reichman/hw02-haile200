@@ -9,24 +9,22 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		// Gets the two command-line arguments
-		int T = Integer.parseInt(args[0]);
+	    int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
-	     int experiments= Integer.parseInt(args[0]);
    		 String ansForMore = ".";	
 		String ans= "";
-		int conter2 = 0;     
-		int conter3 = 0;
-		int conter4 = 0;
-   		 int colcoltion = 0;
-		char boy = 'b';
-		char girl = 'g';
-    	int r = 0;
-    	for (; r < experiments; ++r) {
-        	ans="";
-    		boolean helper = true;
+	    int conter2 = 0;     
+	    int conter3 = 0;
+	    int conter4 = 0;
+        int colcoltion = 0;
+	    char boy = 'b';
+	    char girl = 'g';
+        int r = 0;
+        for (; r < T; ++r) {
+        ans="";
+    	boolean helper = true;
         while (helper){
 				double rand = generator.nextDouble(); 
 		   		ans+= (rand<0.5) ? boy : girl;  
@@ -37,7 +35,7 @@ public class OneOfEachStats {
     	                		helper=false;
                 	    }                                         
             	    }
-                }
+                   }
       }
 		if(ans.length()==2 )
 		      conter2++;
