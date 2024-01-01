@@ -4,13 +4,13 @@
 public class Perfect {
 	public static void main (String[] args) {
 		String helper =" ";
-		String ans = " ";
+		String ans = "";
 		int counter=0;
-		int TheNumIsPerfect = Integer.parseInt(args[0]);
+		int TheNumIsPerfect =6;// Integer.parseInt(args[0]);
 		for (int i = 1; i < TheNumIsPerfect ; i++) {
 			if (TheNumIsPerfect%i==0) {
 				counter+=i;
-				helper+=" "+i+" +";
+				helper+=""+i+" +";
 			}
 		}
 		for (int j = 0; j < helper.length()-2; j++) {  
