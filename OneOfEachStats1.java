@@ -21,7 +21,7 @@ public class OneOfEachStats1 {
         while (helper){
 				double rand = Math.random(); 
 		   		ans+= (rand<0.5) ? boy : girl;
-				 	colcoltion++;                                                  
+				 		colcoltion++;                                                  
         		for (int i = 0; i < ans.length()-1; i++) {
             		if(ans.length()>1){
                    		if (ans.charAt(i) != ans.charAt(i+1)){

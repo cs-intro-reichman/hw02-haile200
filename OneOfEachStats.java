@@ -46,7 +46,7 @@ public class OneOfEachStats {
 		if(ans.length()>=4)
 		      conter4++;
 	}
-  double Average=((double)colcoltion/(double)experiments);    
+  double Average=((double)colcoltion/(double)T);    
   int chack = Math.max(conter3, conter2);
   int max = Math.max(chack,conter4); 
   if(max==conter4 ){
@@ -57,7 +57,7 @@ public class OneOfEachStats {
             max = 2;
         else
             max = 3;
-        if(r==experiments){     
+        if(r==T){     
     			System.out.println("Average : "+Average+" children to get at least one of each gender."+"\n"+
                         "Number of families with 2 children : "+conter2+"\n"+
                         "Number of families with 3 children : "+conter3+"\n"+
