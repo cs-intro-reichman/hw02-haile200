@@ -10,7 +10,7 @@ public class Perfect {
 		for (int i = 1; i < TheNumIsPerfect ; i++) {
 			if (TheNumIsPerfect%i==0) {
 				counter+=i;
-				helper+=""+i+" +";
+				helper+=" "+i+" +";
 			}
 		}
 		for (int j = 0; j < helper.length()-2; j++) {  
