@@ -6,14 +6,17 @@ import javax.swing.JOptionPane;
  */
 public class Reverse {
 	public static void main (String[] args){
-		String letter= "abc";//(args[0]);
-		int Middle=  letter.length()/2;
-		String Reverse =" ";
-		for (int i = letter.length()-1; i >= 0; i--) { // לוקח את האות האחרונה ושם אותו ראשונה 
-			Reverse+=""+letter.charAt(i)+"";
+		String Letters = (args[0]);
+		int Middle =  Letters.length()/2;
+		if (Letters.length()%2==0) {
+			 Middle =  Letters.length()/2-1;
+		}
+		String Reverse = " ";
+		for (int i = Letters.length()-1; i >= 0; i--) { // לוקח את האות האחרונה ושם אותו ראשונה 
+			Reverse+=""+Letters.charAt(i)+"";
 			}
 		System.out.println(Reverse);
-		System.out.println(" The middle character is "+letter.charAt( Middle));
+		System.out.println(" The middle character is "+Letters.charAt( Middle));
 	}
 }
 //done 

@@ -4,6 +4,17 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+	int FirstTry = (int)(Math.random() * (10));	
+	int Attempts = 0;
+	System.out.print(+FirstTry+" ");
+	do{	
+		Attempts = (int)(Math.random() * (10));
+		if(Attempts>=FirstTry){	
+    		System.out.print(+Attempts+" ");
+			FirstTry =Attempts;
+		}	
+    }while(FirstTry <= Attempts);	
+
 	}
 }
+//done 

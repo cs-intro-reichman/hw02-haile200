@@ -6,7 +6,7 @@ public class Perfect {
 		String helper =" ";
 		String ans = " ";
 		int counter=0;
-		int TheNumIsPerfect = Integer.parseInt(args[0]);
+		int TheNumIsPerfect = 0;//Integer.parseInt(args[0]);
 		for (int i = 1; i < TheNumIsPerfect ; i++) {
 			if (TheNumIsPerfect%i==0) {
 				counter+=i;
@@ -25,4 +25,4 @@ public class Perfect {
 
 
 	}
-}
+} ///  מספר מושלם ממספרים חיובים 
