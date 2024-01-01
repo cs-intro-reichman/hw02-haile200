@@ -49,7 +49,7 @@ public class OneOfEachStats1 {
         else
             max = 3;
         if(r==experiments){     
-    			System.out.println("Average : "+Average+" children to get at least one of each gender."+"\n"+
+    			System.out.println("Average: "+Average+" children to get at least one of each gender."+"\n"+
                         "Number of families with 2 children: "+conter2+"\n"+
                         "Number of families with 3 children: "+conter3+"\n"+
                         "Number of families with 4 or more children: "+conter4+"\n"+                           
