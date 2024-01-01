@@ -8,7 +8,7 @@ public class DamkaBoard {
 			for (int j = 0; j < lines; j++) {
 				System.out.print("* ");
 			}		
-			System.out.print("\n");
+			System.out.println();
 			if(i%2==0){   /// Helps to make space between lines 
 			System.out.print(" "); 
 			}	
