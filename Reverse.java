@@ -12,7 +12,7 @@ public class Reverse {
 			 Middle =  Letters.length()/2-1;
 		}
 		String Reverse = " ";
-		for (int i = Letters.length()-1; i >= 0; i--) { // לוקח את האות האחרונה ושם אותו ראשונה 
+		for (int i = Letters.length()-1; i >= 0; i--) {  
 			Reverse+=""+Letters.charAt(i)+"";
 			}
 		System.out.println(Reverse);

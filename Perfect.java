@@ -4,7 +4,7 @@
 public class Perfect {
 	public static void main (String[] args) {
 		String helper =" ";
-		String ans = " ";
+		String ans = "";
 		int counter=0;
 		int TheNumIsPerfect = Integer.parseInt(args[0]);
 		for (int i = 1; i < TheNumIsPerfect ; i++) {
