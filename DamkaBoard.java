@@ -3,21 +3,22 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
-		int lines= Integer.parseInt(args[0]);
+		int lines=Integer.parseInt(args[0]);
 		for (int i = 0; i < lines; i++) {
 			for (int j = 0; j < lines; j++) {
 				if(lines-1==j){
-				System.out.print("*");
+				System.out.print("*"+"\n");
 				}else
 				System.out.print("* ");
 			}
-			if(i!=lines-1)
-			System.out.println();		
+			if(i==lines-1){
+				System.exit(0);
+			}
 			if(i%2==0){   /// Helps to make space between lines 
-			System.out.print(" "); 
+			System.out.print(" ");
+			}
 			}	
 		}
 
 	}
-}
 //done 
