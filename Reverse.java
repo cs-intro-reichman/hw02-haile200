@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
  */
 public class Reverse {
 	public static void main (String[] args){
-		String Letters = (args[0]);
+		String Letters =(args[0]);
 		int Middle =  Letters.length()/2;
 		if (Letters.length()%2==0) {
 			 Middle =  Letters.length()/2-1;

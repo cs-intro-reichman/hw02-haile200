@@ -20,13 +20,12 @@ public class OneOfEachStats1 {
     	boolean helper = true;
         while (helper){
 				double rand = Math.random(); 
-		   		ans+= (rand<0.5) ? boy : girl;                                                  
+		   		ans+= (rand<0.5) ? boy : girl;
+				 	colcoltion++;                                                  
         		for (int i = 0; i < ans.length()-1; i++) {
             		if(ans.length()>1){
                    		if (ans.charAt(i) != ans.charAt(i+1)){
     	                		helper=false;
-                    			}else 
-                            	 colcoltion++;
                 	}                                         
             	}
                   
@@ -49,7 +48,7 @@ public class OneOfEachStats1 {
             max = 2;
         else
             max = 3;
-        if(r==T){     
+        if(r==experiments){     
     			System.out.println("Average : "+Average+" children to get at least one of each gender."+"\n"+
                         "Number of families with 2 children : "+conter2+"\n"+
                         "Number of families with 3 children : "+conter3+"\n"+
@@ -57,4 +56,5 @@ public class OneOfEachStats1 {
                         "The most common number of children is "+max+ansForMore);
 		}
 	}
+}
 }
