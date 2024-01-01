@@ -28,3 +28,4 @@ public class OneOfEach {
 	System.out.println("\n"+" You made it... and you now have " +i);  // Need to work on the organization and visibility
 	}
 }
+//done 

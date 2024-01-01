@@ -5,10 +5,10 @@
  * 	that determines how many families to simulate.
  */
 public class OneOfEachStats1 {
-    int experiments= 3;//Integer.parseInt(args[0]);
+    int experiments= Integer.parseInt(args[0]);
     String ansForMore = ".";	
 	String ans= "";
-	int conter2 = 0;
+	int conter2 = 0;     
 	int conter3 = 0;
 	int conter4 = 0;
     int colcoltion = 0;
