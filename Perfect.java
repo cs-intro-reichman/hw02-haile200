@@ -4,7 +4,7 @@
 public class Perfect {
 	public static void main (String[] args) {
 		String helper =" ";
-		String ans = "";
+		String ans = " ";
 		int counter=0;
 		int TheNumIsPerfect = Integer.parseInt(args[0]);
 		for (int i = 1; i < TheNumIsPerfect ; i++) {
@@ -17,7 +17,7 @@ public class Perfect {
 				ans+=helper.charAt(j);	
 		}
 		if (counter==TheNumIsPerfect) {
-			System.out.println( +TheNumIsPerfect+ " is a perfect number since "+TheNumIsPerfect+" ="+ans);
+			System.out.println(+TheNumIsPerfect+ " is a perfect number since "+TheNumIsPerfect+" ="+ans);
 		}
 		else{
 			System.out.println(+TheNumIsPerfect+" is not a perfect number");
