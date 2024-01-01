@@ -17,7 +17,7 @@ public class Perfect {
 				ans+=helper.charAt(j);	
 		}
 		if (counter==TheNumIsPerfect) {
-			System.out.println(+TheNumIsPerfect+ " is a perfect number since "+TheNumIsPerfect+" ="+ans);
+			System.out.println(+TheNumIsPerfect+" is a perfect number since "+TheNumIsPerfect+" ="+ans);
 		}
 		else{
 			System.out.println(+TheNumIsPerfect+" is not a perfect number");
