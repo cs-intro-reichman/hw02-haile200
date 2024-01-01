@@ -3,7 +3,7 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
-		int lines= 3;//Integer.parseInt(args[0]);
+		int lines= Integer.parseInt(args[0]);
 		for (int i = 0; i < lines; i++) {
 			for (int j = 0; j < lines; j++) {
 				if(lines-1==j){
