@@ -13,11 +13,11 @@ public class OneOfEachStats {
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
-   		 String ansForMore = ".";	
+   	    String EndOfsentence = ".";	
 		String ans= "";
-	    int conter2 = 0;     
-	    int conter3 = 0;
-	    int conter4 = 0;
+	    int ConterFor2 = 0;     
+	    int ConterFor3 = 0;
+	    int ConterFor4 = 0; 
         int colcoltion = 0;
 	    char boy = 'b';
 	    char girl = 'g';
@@ -28,39 +28,39 @@ public class OneOfEachStats {
         while (helper){
 				double rand = generator.nextDouble(); 
 		   		ans+= (rand<0.5) ? boy : girl;  
-                        colcoltion++;                                                
-        		for (int i = 0; i < ans.length()-1; i++) {
+                        colcoltion++;                               ///The loop is  Generates with Math.random   													                                                                      //that fate and the character after it are different               
+                for (int i = 0; i < ans.length()-1; i++) {         // And with acolcoltion to help think the Average 
             		if(ans.length()>1){
                    		if (ans.charAt(i) != ans.charAt(i+1)){
     	                		helper=false;
                 	    }                                         
             	    }
-                   }
-      }
-		if(ans.length()==2 )
-		      conter2++;
-		if(ans.length()==3 )
-			  conter3++;
-		if(ans.length()>=4)
-		      conter4++;
-	}
+                }
+        }
+		    if(ans.length()==2 )         
+		          ConterFor2++;         
+		    if(ans.length()==3 )        ///Loops that help associate with the relevant family quantity  
+		         ConterFor3++;
+		    if(ans.length()>=4)
+		  	     ConterFor4++;
+	   }
   double Average=((double)colcoltion/(double)T);    
-  int chack = Math.max(conter3, conter2);
-  int max = Math.max(chack,conter4); 
-  if(max==conter4 ){
-         ansForMore = " or more.";
+  int chack = Math.max(ConterFor3, ConterFor2);
+  int max = Math.max(chack,ConterFor4); 
+  if(max==ConterFor4 ){
+         EndOfsentence = " or more.";
             max = 4;
         }else if 
-        (max==conter2)  
+        (max==ConterFor2)  
             max = 2;
         else
             max = 3;
         if(r==T){     
     			System.out.println("Average: "+Average+" children to get at least one of each gender."+"\n"+
-                        "Number of families with 2 children: "+conter2+"\n"+
-                        "Number of families with 3 children: "+conter3+"\n"+
-                        "Number of families with 4 or more children: "+conter4+"\n"+                           
-                        "The most common number of children is "+max+ansForMore);
+                        "Number of families with 2 children: "+ConterFor2+"\n"+
+                        "Number of families with 3 children: "+ConterFor3+"\n"+
+                        "Number of families with 4 or more children: "+ConterFor4+"\n"+                           
+                        "The most common number of children is "+max+EndOfsentence);
 		}
 	}
     }

@@ -13,7 +13,7 @@ public class OneOfEachStats1 {
 	int conter4 = 0;
     int colcoltion = 0;
 	char boy = 'b';
-	char girl = 'g';
+	char girl = 'g'; 
     int r = 0;
     for (; r < experiments; ++r) {
         ans="";

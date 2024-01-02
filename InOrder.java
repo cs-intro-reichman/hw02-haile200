@@ -8,10 +8,10 @@ public class InOrder {
 	int Attempts = 0;
 	System.out.print(+FirstTry+" ");
 	do{	
-		Attempts = (int)(Math.random() * (10));
+		Attempts = (int)(Math.random() * (10));    
 		if(Attempts>=FirstTry){	
-    		System.out.print(+Attempts+" ");
-			FirstTry =Attempts;
+    		System.out.print(+Attempts+" ");     // A loop enters only when the second is larger than the first  
+			FirstTry = Attempts;
 		}	
     }while(FirstTry <= Attempts);	
 
