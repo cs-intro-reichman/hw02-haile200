@@ -14,7 +14,7 @@ public class InOrder {
 			FirstTry = Attempts;
 		}	
     }while(FirstTry <= Attempts);	
-
+	
 	}
 }
 //done 

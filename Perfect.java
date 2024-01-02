@@ -23,7 +23,6 @@ public class Perfect {
 			System.out.println(+TheNumIsPerfect+" is not a perfect number");
 		}
 
-
 	}
 }
 //done 
